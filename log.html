@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="css/log.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+<div class="bg">
+</div>
+    <div class="log-wrap">
+        <div class="wrap-title">稷下淘</div>
+        <div class="wrap-usr">
+            <div class="name">
+                <p id="user-name">用户名</p>
+                <input id='usr-name-write' type="text" placeholder="用户名" >
+                <div class="usr-bar1"></div>
+            </div>
+            <div class="password">
+                <p id="user-password">密码</p>
+                <input id='usr-password-write' type="text" placeholder="密码" >
+                <div class="usr-bar2"></div>
+            </div>
+        </div>
+        <div class="wrap-footer">
+            <div class="log-button">登录</div>
+        </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    $("#usr-name-write").focusin(function () {
+        $("#user-name").addClass('p-animate')
+        this.placeholder=''
+        $(".usr-bar1").addClass('usr-bar-transition')
+    });
+    $("#usr-name-write").focusout(function () {
+        $("#user-name").removeClass('p-animate');
+        this.placeholder='用户名';
+        $(".usr-bar1").removeClass('usr-bar-transition')
+
+    });
+    $("#usr-password-write").focusin(function () {
+        $("#user-password").addClass('p-animate')
+        this.placeholder=''
+        $(".usr-bar2").addClass('usr-bar-transition')
+    });
+    $("#usr-password-write").focusout(function () {
+        $("#user-password").removeClass('p-animate')
+        this.placeholder='密码'
+        $(".usr-bar2").removeClass('usr-bar-transition')
+
+    })
+
+</script>
+</body>
+</html>
