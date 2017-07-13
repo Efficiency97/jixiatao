@@ -10,22 +10,26 @@ body {
 .main {
   width: 100%;
   height: 100%; }
-  .main .log-wrap {
+  .main .log-wrap,
+  .main .sign-wrap {
     width: 30%;
     height: 700px;
     margin: 130px auto;
     box-shadow: 0px 3px 21px -2px #cccccc;
     padding: 30px 70px;
     box-sizing: border-box; }
-    .main .log-wrap .wrap-title {
+    .main .log-wrap .wrap-title,
+    .main .sign-wrap .wrap-title {
       font-size: 30px;
       color: #df6839;
       margin-bottom: 80px; }
-    .main .log-wrap .wrap-usr .name {
+    .main .log-wrap .wrap-usr .email,
+    .main .sign-wrap .wrap-usr .email {
       margin-top: 0px;
       width: 100%;
       height: 45px; }
-      .main .log-wrap .wrap-usr .name input {
+      .main .log-wrap .wrap-usr .email input,
+      .main .sign-wrap .wrap-usr .email input {
         width: 100%;
         height: 45px;
         font-size: 25px;
@@ -35,24 +39,29 @@ body {
         position: relative;
         border-bottom: 1px solid #cccccc;
         z-index: 3; }
-      .main .log-wrap .wrap-usr .name ::-webkit-input-placeholder {
+      .main .log-wrap .wrap-usr .email ::-webkit-input-placeholder,
+      .main .sign-wrap .wrap-usr .email ::-webkit-input-placeholder {
         /* WebKit browsers */
         color: #999; }
-      .main .log-wrap .wrap-usr .name input:focus {
+      .main .log-wrap .wrap-usr .email input:focus,
+      .main .sign-wrap .wrap-usr .email input:focus {
         outline: none;
         border-bottom: 0px solid #cccccc; }
-      .main .log-wrap .wrap-usr .name .usr-bar1 {
+      .main .log-wrap .wrap-usr .email .usr-bar1,
+      .main .sign-wrap .wrap-usr .email .usr-bar1 {
         height: 1px;
         width: 50%;
-        z-index: -100;
+        z-index: -102;
         background-color: red;
         margin: 0 auto;
         transition: all .4s linear;
         margin-top: -1px; }
-      .main .log-wrap .wrap-usr .name .usr-bar-transition {
+      .main .log-wrap .wrap-usr .email .usr-bar-transition,
+      .main .sign-wrap .wrap-usr .email .usr-bar-transition {
         width: 100%;
         height: 2px; }
-      .main .log-wrap .wrap-usr .name p {
+      .main .log-wrap .wrap-usr .email p,
+      .main .sign-wrap .wrap-usr .email p {
         display: inline-block;
         font-family: '微软雅黑 Light';
         font-size: 25px;
@@ -62,13 +71,18 @@ body {
         z-index: 1;
         top: 40px;
         transition: all .4s linear; }
-      .main .log-wrap .wrap-usr .name .p-animate {
+      .main .log-wrap .wrap-usr .email .p-animate,
+      .main .sign-wrap .wrap-usr .email .p-animate {
         font-size: 18px;
         top: 0px !important;
         color: #df6839; }
-    .main .log-wrap .wrap-usr .password {
-      margin-top: 100px; }
-      .main .log-wrap .wrap-usr .password input {
+    .main .log-wrap .wrap-usr .name,
+    .main .sign-wrap .wrap-usr .name {
+      margin-top: 50px;
+      width: 100%;
+      height: 45px; }
+      .main .log-wrap .wrap-usr .name input,
+      .main .sign-wrap .wrap-usr .name input {
         width: 100%;
         height: 45px;
         font-size: 25px;
@@ -78,13 +92,16 @@ body {
         position: relative;
         border-bottom: 1px solid #cccccc;
         z-index: 3; }
-      .main .log-wrap .wrap-usr .password ::-webkit-input-placeholder {
+      .main .log-wrap .wrap-usr .name ::-webkit-input-placeholder,
+      .main .sign-wrap .wrap-usr .name ::-webkit-input-placeholder {
         /* WebKit browsers */
         color: #999; }
-      .main .log-wrap .wrap-usr .password input:focus {
+      .main .log-wrap .wrap-usr .name input:focus,
+      .main .sign-wrap .wrap-usr .name input:focus {
         outline: none;
-        border-bottom: none; }
-      .main .log-wrap .wrap-usr .password .usr-bar2 {
+        border-bottom: 0px solid #cccccc; }
+      .main .log-wrap .wrap-usr .name .usr-bar2,
+      .main .sign-wrap .wrap-usr .name .usr-bar2 {
         height: 1px;
         width: 50%;
         z-index: -100;
@@ -92,10 +109,12 @@ body {
         margin: 0 auto;
         transition: all .4s linear;
         margin-top: -1px; }
-      .main .log-wrap .wrap-usr .password .usr-bar-transition {
+      .main .log-wrap .wrap-usr .name .usr-bar-transition,
+      .main .sign-wrap .wrap-usr .name .usr-bar-transition {
         width: 100%;
         height: 2px; }
-      .main .log-wrap .wrap-usr .password p {
+      .main .log-wrap .wrap-usr .name p,
+      .main .sign-wrap .wrap-usr .name p {
         display: inline-block;
         font-family: '微软雅黑 Light';
         font-size: 25px;
@@ -105,16 +124,110 @@ body {
         z-index: 1;
         top: 40px;
         transition: all .4s linear; }
-      .main .log-wrap .wrap-usr .password .p-animate {
+      .main .log-wrap .wrap-usr .name .p-animate,
+      .main .sign-wrap .wrap-usr .name .p-animate {
         font-size: 18px;
         top: 0px !important;
         color: #df6839; }
-      .main .log-wrap .wrap-usr .password .p-hide {
+    .main .log-wrap .wrap-usr .password,
+    .main .sign-wrap .wrap-usr .password {
+      margin-top: 50px;
+      width: 100%;
+      height: 45px; }
+      .main .log-wrap .wrap-usr .password input,
+      .main .sign-wrap .wrap-usr .password input {
+        width: 100%;
+        height: 45px;
+        font-size: 25px;
+        background-color: transparent;
+        line-height: 45px;
+        border: none;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+        z-index: 3; }
+      .main .log-wrap .wrap-usr .password ::-webkit-input-placeholder,
+      .main .sign-wrap .wrap-usr .password ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #999; }
+      .main .log-wrap .wrap-usr .password input:focus,
+      .main .sign-wrap .wrap-usr .password input:focus {
+        outline: none;
+        border-bottom: none; }
+      .main .log-wrap .wrap-usr .password .usr-bar3,
+      .main .sign-wrap .wrap-usr .password .usr-bar3 {
+        height: 1px;
+        width: 50%;
+        z-index: -100;
+        background-color: red;
+        margin: 0 auto;
+        transition: all .4s linear;
+        margin-top: -1px; }
+      .main .log-wrap .wrap-usr .password .usr-bar-transition,
+      .main .sign-wrap .wrap-usr .password .usr-bar-transition {
+        width: 100%;
+        height: 2px; }
+      .main .log-wrap .wrap-usr .password p,
+      .main .sign-wrap .wrap-usr .password p {
+        display: inline-block;
+        font-family: '微软雅黑 Light';
+        font-size: 25px;
+        line-height: 20px;
+        color: transparent;
+        position: relative;
+        z-index: 1;
+        top: 40px;
+        transition: all .4s linear; }
+      .main .log-wrap .wrap-usr .password .p-animate,
+      .main .sign-wrap .wrap-usr .password .p-animate {
+        font-size: 18px;
+        top: 0px !important;
+        color: #df6839; }
+      .main .log-wrap .wrap-usr .password .p-hide,
+      .main .sign-wrap .wrap-usr .password .p-hide {
         font-size: 25px;
         color: #999; }
-    .main .log-wrap .wrap-footer {
-      margin-top: 120px;
+    .main .log-wrap .wrap-usr .seccode,
+    .main .sign-wrap .wrap-usr .seccode {
+      margin-top: 50px;
       width: 100%;
+      height: 45px; }
+      .main .log-wrap .wrap-usr .seccode input,
+      .main .sign-wrap .wrap-usr .seccode input {
+        width: 60%;
+        height: 45px;
+        font-size: 25px;
+        background-color: transparent;
+        line-height: 45px;
+        border: none;
+        position: relative;
+        border-bottom: 1px solid #cccccc;
+        z-index: 3; }
+      .main .log-wrap .wrap-usr .seccode ::-webkit-input-placeholder,
+      .main .sign-wrap .wrap-usr .seccode ::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #999; }
+      .main .log-wrap .wrap-usr .seccode input:focus,
+      .main .sign-wrap .wrap-usr .seccode input:focus {
+        outline: none;
+        border-bottom: 1px solid #df6839; }
+      .main .log-wrap .wrap-usr .seccode .usr-seccode-button,
+      .main .sign-wrap .wrap-usr .seccode .usr-seccode-button {
+        width: 35%;
+        height: 40px;
+        background-color: #df6839;
+        position: relative;
+        left: 65%;
+        top: -45px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        color: #ffffff;
+        font-family: '微软雅黑 Light' !important; }
+    .main .log-wrap .wrap-footer,
+    .main .sign-wrap .wrap-footer {
+      position: relative;
+      width: 100%;
+      margin-top: 150px;
       height: 50px;
       background-color: #df6839;
       color: #ffffff;

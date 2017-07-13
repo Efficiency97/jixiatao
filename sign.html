@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="css/log.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+    <div class="bg">
+    </div>
+    <div class="sign-wrap">
+        <div class="wrap-title">稷下淘</div>
+        <div class="wrap-usr">
+            <div class="email">
+                <p id="user-email">请输入手机/邮箱</p>
+                <input id='usr-email-write' type="text" placeholder="手机/邮箱" >
+                <div class="usr-bar1"></div>
+            </div>
+            <div class="name">
+                <p id="user-name">昵称</p>
+                <input id='usr-name-write' type="text" placeholder="昵称" >
+                <div class="usr-bar2"></div>
+            </div>
+            <div class="password">
+                <p id="user-password">密码</p>
+                <input id='usr-password-write' type="text" placeholder="密码" >
+                <div class="usr-bar3"></div>
+            </div>
+            <div class="seccode">
+                <input id='usr-seccode-write' type="text" placeholder="验证码" >
+                <div class="usr-seccode-button">发送验证码</div>
+            </div>
+        </div>
+        <div class="wrap-footer">
+            <div class="log-button">注册</div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    $("#usr-email-write").focusin(function () {
+        $("#user-email").addClass('p-animate');
+        this.placeholder='';
+        $(".usr-bar1").addClass('usr-bar-transition')
+    });
+    $("#usr-email-write").focusout(function () {
+        $("#user-email").removeClass('p-animate');
+        this.placeholder='手机/邮箱';
+        $(".usr-bar1").removeClass('usr-bar-transition')
+    });
+
+    $("#usr-name-write").focusin(function () {
+        $("#user-name").addClass('p-animate')
+        this.placeholder='';
+        $(".usr-bar2").addClass('usr-bar-transition')
+    });
+    $("#usr-name-write").focusout(function () {
+        $("#user-name").removeClass('p-animate');
+        this.placeholder='手机/邮箱';
+        $(".usr-bar2").removeClass('usr-bar-transition')
+
+    });
+    $("#usr-password-write").focusin(function () {
+        $("#user-password").addClass('p-animate')
+        this.placeholder=''
+        $(".usr-bar3").addClass('usr-bar-transition')
+    });
+    $("#usr-password-write").focusout(function () {
+        $("#user-password").removeClass('p-animate')
+        this.placeholder='昵称'
+        $(".usr-bar3").removeClass('usr-bar-transition')
+
+    })
+</script>
+</body>
+</html>
